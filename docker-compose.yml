@@ -1,11 +1,10 @@
 version: '3'
 services:
-  frontend:
+  react-app:
     build:
       context: .
     ports:
       - "4000:4000"
     volumes:
       - .:/app
-    environment:
-      - NODE_ENV=development
+    command: npm start
