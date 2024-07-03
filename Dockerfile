@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copia package.json y package-lock.json al directorio de trabajo
-COPY package*.json ./
+COPY package.json package-lock.json ./
 
 # Instala las dependencias del frontend
 RUN npm install
@@ -13,11 +13,8 @@ RUN npm install
 # Copia todo el código fuente del frontend al contenedor
 COPY . .
 
-# Compila la aplicación
-RUN npm run build
-
 # Exposición del puerto
-EXPOSE 3000
+EXPOSE 4000
 
 # Comando para ejecutar la aplicación
 CMD ["npm", "start"]
