@@ -1,0 +1,62 @@
+body{
+    font-family: 'Barlow', sans-serif; 
+}
+.navbar {
+    background-color: #900c3f;
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center; 
+    font-family: 'Barlow', sans-serif;
+    color: black;
+    z-index: 1000;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+    height: 5rem;
+}
+
+.navbar-menu ul li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 6.25rem; 
+    margin-right: 12.5rem ;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    color:black;
+    font-weight: semibold;
+    font-size: 1.25rem;
+    transition: color 0.3s ease;
+}
+
+
+.navbar-menu li a:hover {
+    color: white; 
+}
+
+@media (min-width: 768px) {
+    .navbar-menu{
+        flex: 1;
+    }
+    .navbar-menu li{
+        margin-left:  2rem;
+    }
+    .navbar-menu li a {
+        font-size: 1.875rem;
+    }
+}
