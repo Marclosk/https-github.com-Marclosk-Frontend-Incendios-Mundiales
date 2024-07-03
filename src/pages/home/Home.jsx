@@ -1,10 +1,15 @@
+import ActiveFiresMap from "../../components/map/ActiveFiresMap";
+import './home.css'
 
 const Home = () => {
-  return (
-    <div>
-      <h1>Home</h1>
-    </div>
-  )
-}
+    return (
+        <>
+            <section className="title container">
+                <h1>Mapa en Tiempo Real de Incendios: Mantente Informado, Mantente Seguro</h1>
+            </section>
+            <ActiveFiresMap />
+        </>
+    );
+};
 
-export default Home
+export default Home;
