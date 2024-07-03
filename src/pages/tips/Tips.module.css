@@ -1,0 +1,111 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E6D5B8;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .real_fire_data {
+    background-color: #FF5733;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: left; 
+  }
+  
+  .real_fire_data h1 {
+    margin-bottom: 15px;
+  }
+  
+  .real_fire_data p {
+    text-align: justify; 
+    margin: 0; 
+  }
+  
+  .prevention_tips {
+    background-color: #900C3F;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  .column {
+    width: 45%;
+    padding: 10px; 
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    background-color: #900C3F;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .column {
+      width: 100%; 
+    }
+  
+    .container {
+      padding: 10px; 
+    }
+  
+    .real_fire_data {
+      padding: 15px;
+    }
+  
+    .prevention_tips {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 1.5rem; 
+    }
+  
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    p {
+      font-size: 0.9rem; 
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  }
+  
