@@ -8,7 +8,7 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
-    "start": "cross-env PORT=4000 react-scripts start",
+    "start": "PORT=4000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "cross-env": "^7.0.3",
     "eslint-plugin-react-refresh": "^0.4.7"
   }
 }
