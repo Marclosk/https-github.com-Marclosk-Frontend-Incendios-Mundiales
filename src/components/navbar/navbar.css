@@ -1,11 +1,15 @@
 .navbar {
     background-color: #900c3f;
-    width: 100%;
-    height: 6rem;
-    padding: 0.8rem;
+    padding: 3rem 10%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.navbar-logo {
+    width: 12rem;
 }
 
 .navbar-menu {
@@ -15,44 +19,36 @@
     list-style: none;
 }
 
-.navbar-logo{
-    display: flex;
-    justify-content: center;
-    margin-right: 1rem;
-    height: 5rem;
+.navbar ul {
+    margin-bottom: 0;
 }
 
-.navbar-menu ul li {
+.navbar-menu {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin-left: 10.25rem; 
-    margin-right: 12.5rem ;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 0;
 }
 
 .navbar-menu li a {
     text-decoration: none;
     color:black;
     font-weight: semibold;
-    font-size: 1.25rem;
+    font-size: 1.875rem;
     transition: color 0.3s ease;
 }
 
 
 .navbar-menu li a:hover {
-    color: white; 
+    color: #fff; 
 }
 
 @media (min-width: 768px) {
-    /* .navbar-menu{
-        /* flex: 1; */
-    /* } */ */
-
-    .navbar-menu li{
-        margin-left:  2rem;
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
     }
-    .navbar-menu li a {
-        font-size: 1.875rem;
-    }
-    
 }
