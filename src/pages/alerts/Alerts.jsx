@@ -12,6 +12,7 @@ const Alert = () => {
   };
 
   return (
+
     <div className="Alert">
       <div className="main-text">
         <h1>Alerta de Incendios</h1>
@@ -33,6 +34,7 @@ const Alert = () => {
           </ul>
         </div>
       </div>
+
     </div>
   );
 };
