@@ -2,7 +2,7 @@
 const Alerts = () => {
   return (
     <div>
-      
+      alerts
     </div>
   )
 }
