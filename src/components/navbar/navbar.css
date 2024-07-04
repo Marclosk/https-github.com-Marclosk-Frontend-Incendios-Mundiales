@@ -1,17 +1,11 @@
-body{
-    font-family: 'Barlow', sans-serif; 
-}
 .navbar {
     background-color: #900c3f;
     width: 100%;
-    padding: 1.25rem;
+    height: 6rem;
+    padding: 0.8rem;
     display: flex;
-    position: fixed;
     justify-content: space-between;
-    align-items: center; 
-    font-family: 'Barlow', sans-serif;
-    color: black;
-    z-index: 1000;
+    align-items: center;
 }
 
 .navbar-menu {
