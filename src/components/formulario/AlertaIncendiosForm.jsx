@@ -8,17 +8,22 @@ const AlertaIncendiosForm = ({ onSubmit }) => {
   const [telefono, setTelefono] = useState('');
   const [latitud, setLatitud] = useState('');
   const [longitud, setLongitud] = useState('');
-  const [masInfo, setmasInfo] = useState('');
+  const [masInfo, setMasInfo] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onSubmit({ nombre, telefono, latitud, longitud,masInfo });
-    setNombre('');
-    setTelefono('');
-    setLatitud('');
-    setLongitud('');
-    setmasInfo('');
-   
+    if (isFormValid()) {
+      onSubmit({ nombre, telefono, latitud, longitud, masInfo });
+      setNombre('');
+      setTelefono('');
+      setLatitud('');
+      setLongitud('');
+      setMasInfo('');
+    }
+  };
+
+  const isFormValid = () => {
+    return nombre && telefono && latitud && longitud && masInfo;
   };
 
   return (
@@ -67,10 +72,10 @@ const AlertaIncendiosForm = ({ onSubmit }) => {
             type="text"
             id="masInfo"
             value={masInfo}
-            onChange={(e) => setmasInfo(e.target.value)}
+            onChange={(e) => setMasInfo(e.target.value)}
           />
         </div>
-        <button type="submit">Enviar Alerta</button>
+        <button type="submit" disabled={!isFormValid()}>Enviar Alerta</button>
       </form>
     </div>
   );
