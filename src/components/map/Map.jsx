@@ -1,25 +1,14 @@
-import Map from "react-map-gl/maplibre";
 import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import "./activeFiresMap.css";
+import "./Map.css";
 import CustomMarker from "./CustomMarker";
 
-const ActiveFiresMap = () => {
+const Map = () => {
     const initialPosition = [40.4168, -3.7038];
     const markerPosition = [41.45152, 2.2081];
 
     return (
         <>
-            <Map
-                
-                initialViewState={{
-                    longitude: -3.74922,
-                    latitude: 40.463667,
-                    zoom: 5.2,
-                }}
-                style={{ width: "100%", height: "43.75rem" }}
-                mapStyle="https://api.maptiler.com/maps/streets/style.json?key=4pTaCtvDhfBTHCQEjVvR"
-            />
             <MapContainer
                 center={initialPosition}
                 zoom={6}
@@ -35,4 +24,4 @@ const ActiveFiresMap = () => {
     );
 };
 
-export default ActiveFiresMap;
+export default Map;
