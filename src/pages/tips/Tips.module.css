@@ -4,9 +4,14 @@
 }
 
 .prevention_tips {
-  background-color: #C70039; 
+  background-color: #E6D5B8; 
   color: white;
   padding: 20px;
+}
+
+.prevention_tips h2 {
+  color: black;
+  margin-bottom: 40px;
 }
 
 .tips_container {
@@ -18,9 +23,11 @@
 .tip_group_left,
 .tip_group_right {
   display: flex;
-  align-items: flex-end;
-  margin-bottom: 20px;
+  align-items: center;
   justify-content: space-around;
+  background-color: #C70039;
+  margin: 0 100px 20px 100px;
+  border-radius: 30px;
 }
 
 .tip_group_left {
