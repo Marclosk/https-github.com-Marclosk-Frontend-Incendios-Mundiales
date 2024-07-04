@@ -1,0 +1,93 @@
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #E6D5B8; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #C70039; 
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #FF5733; 
+    color: white; 
+  }
+  
+  
+  input[type="submit"] {
+    background-color: #C70039; 
+    color: white; 
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  label {
+    color: #C70039; 
+    font-weight: bold;
+  }
+
+  .alertas {
+    background-color: #E6D5B8;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .alertas h2 {
+    color:#C70039;
+  }
+  
+  .alertas ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .alertas li {
+    margin-bottom: 10px;
+  }
+  
+  .alertas li strong {
+    font-weight: bold;
+  }
+  
+  .alertas li strong,
+  .alertas li {
+    color: #fcfcfc;
+    background-color: #FF5733;
+    padding: 5px;
+  }
+
+  @media (max-width: 600px) {
+    form {
+      max-width: 100%;
+    }
+  
+    .alertas {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .alertas li strong,
+    .alertas li {
+      padding: 3px;
+      font-size: 14px;
+    }
+  }
+  

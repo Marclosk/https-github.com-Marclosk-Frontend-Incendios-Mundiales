@@ -1,13 +1,15 @@
 
+
+import './components/formulario/AlertaIncendiosForm.css';
+import Alerts from './pages/alerts/Alerts'; 
 import './App.css'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      
-    </>
-  )
-}
+    <div className="App">
+      <Alerts />
+    </div>
+  );
+};
 
-export default App
+export default App;
