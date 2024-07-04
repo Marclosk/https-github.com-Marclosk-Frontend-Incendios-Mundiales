@@ -27,7 +27,7 @@ const IMAGES = [
 const PreventionTips = () => (
   <div className={styles.container}>
     <div className={styles.prevention_tips}>
-      <h2>Tips de Prevención</h2>
+      <h1>Tips de Prevención</h1>
       <div className={styles.tips_container}>
         {[0, 1, 2].map((groupIndex) => (
           <div 
