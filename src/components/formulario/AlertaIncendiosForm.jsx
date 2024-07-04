@@ -75,7 +75,7 @@ const AlertaIncendiosForm = ({ onSubmit }) => {
             onChange={(e) => setMasInfo(e.target.value)}
           />
         </div>
-        <button type="submit" disabled={!isFormValid()}>Enviar Alerta</button>
+        <button className="submit" type="submit" disabled={!isFormValid()}>Enviar Alerta</button>
       </form>
     </div>
   );
