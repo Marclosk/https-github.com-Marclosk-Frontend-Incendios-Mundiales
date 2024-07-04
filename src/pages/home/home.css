@@ -1,0 +1,16 @@
+.seccion-mapa {
+    margin: 2.25rem auto;
+    padding: 1.25rem 0;
+    background: #ff5733;
+    background: linear-gradient(163deg, #ff5733 0%, #c70039 35%, #511845 100%);
+    border-radius: 5px;
+    box-shadow:
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+}
+
+.seccion-mapa h1 {
+    margin: 0;
+    padding-bottom: 1.65rem;
+    text-align: center;
+    color: #fff;
+}

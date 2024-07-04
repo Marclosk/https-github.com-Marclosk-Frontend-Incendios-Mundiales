@@ -3,8 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@types/mapbox-gl": "^3.1.0",
+    "leaflet": "^1.9.4",
+    "papaparse": "^5.4.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-leaflet": "^4.2.1",
+    "react-map-gl": "^7.1.7",
+    "react-router-dom": "^6.24.1",
     "react-scripts": "^5.0.1"
   },
   "scripts": {
@@ -27,7 +36,15 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-env": "^7.24.7",
+    "@babel/preset-react": "^7.24.7",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^16.0.0",
+    "babel-jest": "^29.7.0",
     "cross-env": "^7.0.3",
-    "eslint-plugin-react-refresh": "^0.4.7"
+    "eslint-plugin-react-refresh": "^0.4.7",
+    "jest": "^27.5.1",
+    "react-test-renderer": "^18.3.1",
+    "vitest": "^1.6.0"
   }
 }

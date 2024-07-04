@@ -1,4 +1,10 @@
-//hay que instalar react router dom
+import { createBrowserRouter } from "react-router-dom";
+import Layout from "../Layout";
+import Home from "../pages/home/Home"
+import Alerts from "../pages/alerts/Alerts"
+import Tips from "../pages/tips/Tips"
+
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -15,8 +21,8 @@ const router = createBrowserRouter([
           {
             path: "/alerts",
             element: <Alerts />,
-          },
-        ],
+          }
+        ]
       }
   ]);
   
