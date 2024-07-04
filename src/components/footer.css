@@ -1,0 +1,23 @@
+footer {
+  background-color: #900c3f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: white;
+}
+
+.footer-links {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+}
