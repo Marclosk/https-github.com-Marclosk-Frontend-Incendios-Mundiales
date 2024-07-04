@@ -1,13 +1,14 @@
 import Map from "../../components/map/Map";
-import './home.css'
+import "./home.css";
 
 const Home = () => {
     return (
         <>
-            <section className="title container">
-                <h1>Mapa en Tiempo Real de Incendios: Mantente Informado, Mantente Seguro</h1>
+            <section className="container seccion-mapa">
+                <h1>Focos Activos en España</h1>
+                <Map />
             </section>
-            <Map />
+            <section></section>
         </>
     );
 };

@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 
 const CustomMarker = ({ position, popupText }) => {
     const customIcon = new L.Icon({
-        iconUrl: "/images/favicon.png",
-        iconSize: [32, 32], 
+        iconUrl: "/images/fire-marker.png",
+        iconSize: [27, 30], 
         iconAnchor: [16, 32], 
         popupAnchor: [0, -32],
     });
