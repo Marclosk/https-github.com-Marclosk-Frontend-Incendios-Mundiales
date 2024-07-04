@@ -2,12 +2,11 @@ body {
   font-family: 'Barlow', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #E6D5B8;
+  background-color: #C70039;
 }
 
 .App {
   text-align: center;
-  padding: 20px;
 }
 
 .fire-data, .prevention-tips {

@@ -1,6 +1,9 @@
 import styles from './Tips.module.css';
+import botella from '../../images/botella.jpg'
+import fuego from '../../images/fuego.jpg'
+import bomberos from '../../images/bomberos.jpg'
 
-const Tips = [
+const TIPS = [
   "No arrojes colillas de cigarro al suelo.",
   "Evita encender fogatas en áreas forestales.",
   "Mantén limpia tu área de acampada.",
@@ -15,38 +18,33 @@ const Tips = [
   "En caso de incendio, evacúa inmediatamente.",
 ];
 
-const leftTips = Tips.slice(0, Math.ceil(Tips.length / 2));
-const rightTips = Tips.slice(Math.ceil(Tips.length / 2));
+const IMAGES = [
+  botella,
+  fuego,
+  bomberos
+];
 
-const Real_data = "Los incendios forestales son eventos naturales que pueden ser destructivos pero también juegan un papel ecológico importante. Cada año, se queman alrededor de 400 millones de hectáreas de tierra en todo el mundo. Estos incendios contribuyen al 70% de las emisiones de CO2 durante los meses de verano y la mayoría son causados por actividades humanas. A pesar de su impacto negativo, los incendios pueden ser beneficiosos para algunos ecosistemas, ayudando a germinar semillas y renovar vegetación. La gestión adecuada de los incendios es esencial para equilibrar sus beneficios y daños. La detección temprana mediante tecnologías como satélites y drones ha mejorado, ayudando a manejar los incendios de manera más efectiva.";
-
-const PreventionTips = () => {
-  return (
-    <div className={styles.container}>
-      <div className={styles.real_fire_data}>
-        <h1>Datos Reales de Incendios</h1>
-        <p>{Real_data}</p>
-      </div>
-      <div className={styles.prevention_tips}>      
-        <div className={styles.column}>
-          <h2>Tips de Prevención</h2>
-          <ul>
-            {leftTips.map((tip, index) => (
-              <li key={index}>{tip}</li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.column}>
-          <h2>&nbsp;</h2>
-          <ul>
-            {rightTips.map((tip, index) => (
-              <li key={index}>{tip}</li>
-            ))}
-          </ul>
-        </div>
+const PreventionTips = () => (
+  <div className={styles.container}>
+    <div className={styles.prevention_tips}>
+      <h2>Tips de Prevención</h2>
+      <div className={styles.tips_container}>
+        {[0, 1, 2].map((groupIndex) => (
+          <div 
+            className={groupIndex % 2 === 0 ? styles.tip_group_left : styles.tip_group_right} 
+            key={groupIndex}
+          >
+            <img src={IMAGES[groupIndex]} alt={`Imagen de prevención ${groupIndex + 1}`} className={styles.image} />
+            <ul>
+              {TIPS.slice(groupIndex * 3, groupIndex * 3 + 3).map((tip, index) => (
+                <li key={index}>{tip}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default PreventionTips;
