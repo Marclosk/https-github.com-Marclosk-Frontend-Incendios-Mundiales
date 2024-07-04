@@ -11,7 +11,7 @@ const Map = () => {
     const data = useApi(url, "csv");
 
     if (data == null) {
-        return <div>Loading...</div>;
+        return <div className="loading"><p>Loading...</p></div>;
     }
 
     function getDate() {
